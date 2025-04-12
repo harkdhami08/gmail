@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+header {
+  background-color: #f1f3f4;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #d93025;
+  margin-right: 30px;
+}
+
+header input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.main-container {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+aside {
+  width: 200px;
+  background-color: #e8eaed;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside ul li {
+  padding: 10px 5px;
+  cursor: pointer;
+  color: #202124;
+}
+
+aside ul li:hover {
+  background-color: #d2e3fc;
+  border-radius: 5px;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.email-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.email {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.email .sender {
+  font-weight: bold;
+}
+
+.email .subject {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.email .snippet {
+  color: gray;
+  font-size: 14px;
+}
+
+.email .time {
+  text-align: right;
+  color: gray;
+  font-size: 12px;
+}
